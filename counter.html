@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter Application</title>
+    <link rel="stylesheet" href="counter.css" />
+  </head>
+  <body>
+    <div class="counter-container">
+      <h1>Counter</h1>
+      <div class="display">
+        <span id="count">0</span>
+      </div>
+      <div class="buttons">
+        <button onclick="increment()">Increase</button>
+        <button id="reset" onclick="reset()">Reset</button>
+        <button onclick="decrement()">Decrease</button>
+      </div>
+      <div class="custom-increment">
+        <input
+          type="number"
+          id="increment-value"
+          placeholder="Enter increment value"
+        />
+        <button onclick="customIncrement()">Submit</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
