@@ -24,9 +24,9 @@ console.log(document.querySelector("#container"));
 // set attribute
 
 // event listener
-button.addEventListener("click", function () {
-  valuField.innerText = parseInt(valuField.innerText) + 1;
-});
+// button.addEventListener("click", function () {
+//   valuField.innerText = parseInt(valuField.innerText) + 1;
+// });
 
 // get inner element using parent.children
 
@@ -34,3 +34,19 @@ button.addEventListener("click", function () {
 const divElement = document.createElement("div");
 divElement.innerHTML = `<P>dhaka bangladesh</P>`;
 container.appendChild(divElement);
+
+// set attributes
+const attribute = document.getElementById("attribute");
+attribute.setAttribute("class", "attribute");
+console.log(attribute.getAttribute("class"));
+
+//
+function handleClick() {
+  alert("Button clicked!");
+}
+
+// onchange
+
+function handleChnage(e) {
+  console.log(e.target.value);
+}
